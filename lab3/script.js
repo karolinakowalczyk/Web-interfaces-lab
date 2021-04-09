@@ -22,12 +22,11 @@ const exampleTaskElementDeleteButton=exampleTaskElement.querySelector("button");
 for (let i = 0; i < toDoListsHeaders.length; i++) {
     toDoListsHeaders[i].addEventListener("click", function() {
         let content = this.nextElementSibling;
-        
         if (content.style.display !== "none") {
             content.style.display = "none";
         } 
         else{
-            content.style.display = "block";
+            content.style.display = "inline";
         }
   });
 }
@@ -244,7 +243,7 @@ const createNewTaskElement = (taskName) => {
     paragraph.style.display = "inline";
 
     deleteButton.innerText="X";
-    deleteButton.className="btn btn-danger"
+    deleteButton.className="btn btn-danger btn-sm"
     deleteButton.style.float="right"
 
     ifTaskCompleted(checkBox, paragraph);
@@ -279,6 +278,3 @@ const addTask = () => {
 }
 
 submitButton.addEventListener("click", addTask);
-
-
-
