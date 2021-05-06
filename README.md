@@ -1,3 +1,5 @@
+# Link to GitHub Pages: https://karolinakowalczyk.github.io/Web-interfaces-lab/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
