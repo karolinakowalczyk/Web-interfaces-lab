@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Web-interfaces-lab/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/Web-interfaces-lab/static/js/main.63f84cff.chunk.js",
+    "main.js.map": "/Web-interfaces-lab/static/js/main.63f84cff.chunk.js.map",
+    "runtime-main.js": "/Web-interfaces-lab/static/js/runtime-main.02bd5a79.js",
+    "runtime-main.js.map": "/Web-interfaces-lab/static/js/runtime-main.02bd5a79.js.map",
+    "static/js/2.4e698efd.chunk.js": "/Web-interfaces-lab/static/js/2.4e698efd.chunk.js",
+    "static/js/2.4e698efd.chunk.js.map": "/Web-interfaces-lab/static/js/2.4e698efd.chunk.js.map",
+    "static/js/3.08494003.chunk.js": "/Web-interfaces-lab/static/js/3.08494003.chunk.js",
+    "static/js/3.08494003.chunk.js.map": "/Web-interfaces-lab/static/js/3.08494003.chunk.js.map",
+    "index.html": "/Web-interfaces-lab/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/Web-interfaces-lab/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.4e698efd.chunk.js.LICENSE.txt": "/Web-interfaces-lab/static/js/2.4e698efd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.02bd5a79.js",
+    "static/js/2.4e698efd.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.63f84cff.chunk.js"
+  ]
+}
