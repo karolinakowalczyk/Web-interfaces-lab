@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/Web-interfaces-lab/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/Web-interfaces-lab/static/js/main.63f84cff.chunk.js",
-    "main.js.map": "/Web-interfaces-lab/static/js/main.63f84cff.chunk.js.map",
-    "runtime-main.js": "/Web-interfaces-lab/static/js/runtime-main.02bd5a79.js",
-    "runtime-main.js.map": "/Web-interfaces-lab/static/js/runtime-main.02bd5a79.js.map",
-    "static/js/2.4e698efd.chunk.js": "/Web-interfaces-lab/static/js/2.4e698efd.chunk.js",
-    "static/js/2.4e698efd.chunk.js.map": "/Web-interfaces-lab/static/js/2.4e698efd.chunk.js.map",
-    "static/js/3.08494003.chunk.js": "/Web-interfaces-lab/static/js/3.08494003.chunk.js",
-    "static/js/3.08494003.chunk.js.map": "/Web-interfaces-lab/static/js/3.08494003.chunk.js.map",
+    "main.css": "/Web-interfaces-lab/static/css/main.7f4fb186.chunk.css",
+    "main.js": "/Web-interfaces-lab/static/js/main.5bcb0858.chunk.js",
+    "main.js.map": "/Web-interfaces-lab/static/js/main.5bcb0858.chunk.js.map",
+    "runtime-main.js": "/Web-interfaces-lab/static/js/runtime-main.69207d3d.js",
+    "runtime-main.js.map": "/Web-interfaces-lab/static/js/runtime-main.69207d3d.js.map",
+    "static/css/2.800be05e.chunk.css": "/Web-interfaces-lab/static/css/2.800be05e.chunk.css",
+    "static/js/2.f2d16023.chunk.js": "/Web-interfaces-lab/static/js/2.f2d16023.chunk.js",
+    "static/js/2.f2d16023.chunk.js.map": "/Web-interfaces-lab/static/js/2.f2d16023.chunk.js.map",
+    "static/js/3.e814dfec.chunk.js": "/Web-interfaces-lab/static/js/3.e814dfec.chunk.js",
+    "static/js/3.e814dfec.chunk.js.map": "/Web-interfaces-lab/static/js/3.e814dfec.chunk.js.map",
     "index.html": "/Web-interfaces-lab/index.html",
-    "static/css/main.6dea0f05.chunk.css.map": "/Web-interfaces-lab/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.4e698efd.chunk.js.LICENSE.txt": "/Web-interfaces-lab/static/js/2.4e698efd.chunk.js.LICENSE.txt"
+    "static/css/2.800be05e.chunk.css.map": "/Web-interfaces-lab/static/css/2.800be05e.chunk.css.map",
+    "static/css/main.7f4fb186.chunk.css.map": "/Web-interfaces-lab/static/css/main.7f4fb186.chunk.css.map",
+    "static/js/2.f2d16023.chunk.js.LICENSE.txt": "/Web-interfaces-lab/static/js/2.f2d16023.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.02bd5a79.js",
-    "static/js/2.4e698efd.chunk.js",
-    "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.63f84cff.chunk.js"
+    "static/js/runtime-main.69207d3d.js",
+    "static/css/2.800be05e.chunk.css",
+    "static/js/2.f2d16023.chunk.js",
+    "static/css/main.7f4fb186.chunk.css",
+    "static/js/main.5bcb0858.chunk.js"
   ]
 }
