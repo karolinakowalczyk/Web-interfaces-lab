@@ -1,48 +1,7 @@
-header, nav, main, footer {
-  margin: 2px;
+h2 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  background-color: #87CEFA;
 }
 
-header {
-  background-color: aqua;
-  min-height: 100px;
-
-}
-main {
-  display: flex;
-}
-
-nav {
-  background-color: darkblue;
-  flex-grow: 1;
-  flex-basis: 15%;
-}
-
-nav a {
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: white;
-  border: 2px solid currentColor;
-}
-
-nav a:hover {
-  border: 2px solid gold;
-  color: gold;
-  border-radius: 2px;
-
-}
-
-nav a.active {
-  background-color: blue;
-}
-
-section {
-  background-color: gray;
-  flex-grow: 5;
-  flex-basis: 50%;
-}
-
-footer {
-  background-color: midnightblue;
-  min-height: 100px;
-}

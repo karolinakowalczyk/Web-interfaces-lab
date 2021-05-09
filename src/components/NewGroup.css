@@ -1,0 +1,10 @@
+.group-container{
+    padding-top: 2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#group-name-input {
+    width: 50%;
+    margin-bottom: 1rem;
+}

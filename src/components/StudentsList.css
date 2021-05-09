@@ -1,0 +1,29 @@
+.list-container {
+    border: 3px solid none;
+    padding: 20px;
+    height: 38rem;
+    background-color: #87CEFA;
+}
+
+.list-child {
+    width: 50%;
+    height: 38rem;
+    float: left;
+    padding: 20px;
+    border: 2px solid grey;
+    overflow: auto;
+    
+}  
+
+li {
+    list-style-type: none;
+}
+
+.card-text {
+    margin: 1px
+}
+
+.search-content{
+    margin-bottom: 1rem;
+}
+

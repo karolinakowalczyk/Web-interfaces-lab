@@ -1,0 +1,30 @@
+.input-container {
+    padding-top: 2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.add-input {
+    margin-bottom: 5px;
+}
+
+#name-input {
+    width: 50%;
+}
+
+#description-input {
+    width: 50%;
+}
+
+#email-input {
+    width: 50%;
+}
+
+#tag-input {
+    width: 39%;
+    margin-left: 5px;
+}
+
+.add-btn {
+    margin-top: 2rem;
+}
