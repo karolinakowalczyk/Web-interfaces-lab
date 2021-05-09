@@ -1,4 +1,5 @@
-# Link to GitHub Pages: https://karolinakowalczyk.github.io/Web-interfaces-lab/
+# Link to GitHub Pages: 
+https://karolinakowalczyk.github.io/Web-interfaces-lab/
 
 # Getting Started with Create React App
 
