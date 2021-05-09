@@ -1,4 +1,10 @@
 # Web-interfaces-lab
+# Lab5
+To see lab5 switch to branch master.
+
+# Link to GitHub Pages: 
+https://karolinakowalczyk.github.io/Web-interfaces-lab/
+
 
 # Lab4
 To run lab4, go to the project folder and then enter the command:
