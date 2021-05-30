@@ -1,49 +1,37 @@
-import { useState, useEffect, useContext } from 'react';
+import { useState} from 'react';
+import {Redirect} from 'react-router-dom';
 import { auth } from  '../../Firebase.js';
-import ProfilePage from '../ProfilePage/ProfilePage.jsx';
-import UserContext from '../UserContext/UserContext.jsx'
-
 import './Login.css';
-const Login = (props) =>{
+
+const Login = () =>{
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [forgotPasswordButton, setForgotPasswordButton] =useState(false);
     const [userLogged, setUserLogged] =useState(false);
-    //const [ user, setUser ] = useState(props);
-    const { user, setUser } = useContext(UserContext);
-
-    /*useEffect(() => {
-        setUser(!user);
-    }, [user]);*/
+    const [wrongData, setWrongData] = useState(false);
 
     const signIn = () => {
 
         auth.signInWithEmailAndPassword(email, password).then(() => {
             console.log("zalogowano");
-            //setUserLogged(true);
-            setUserLogged(!userLogged)
-            setUser(!user);
+            setUserLogged(true);
+            setWrongData(false);
             
             
         }).catch((error) => {
             console.log(error);
+            setWrongData(true);
         });
     }
+
+    if(userLogged){
+        return <Redirect to="/myprofile" exact />
+      }
+
     
     return (
         <>
-        {user ? 
-        <>
-            <div className="containter">
-
-                <div className="profile-page-container">
-                    <ProfilePage></ProfilePage>
-
-                </div>
-            </div>
-        
-        </> : <>
         <div className="login-container">
     
             {!forgotPasswordButton ? 
@@ -64,9 +52,12 @@ const Login = (props) =>{
                     ></input>
                     <button onClick={signIn}>Zaloguj się</button>
                     <button onClick={() => setForgotPasswordButton(true)}> Zapomniałeś hasła? </button>
-                </> : <button onClick={() => setForgotPasswordButton(false)}> Zatwierdź nowe hasło </button>}         
+                </> : <button onClick={() => setForgotPasswordButton(false)}> Zatwierdź nowe hasło </button>
+                } 
+                {wrongData && (
+                <h3 style={{ color: "red" }}>Wrong email or password</h3>    
+            )}     
         </div>
-        </> }
         </>    
                     
         
