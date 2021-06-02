@@ -1,10 +1,12 @@
 import { auth } from  '../../Firebase.js';
 import MainPage from  '../MainPage/MainPage.jsx';
 import {NavLink, BrowserRouter as Router} from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useContext } from 'react';
+import {AuthContext} from '../AuthContext/AuthContext.jsx';
 
 const Header = () =>{
-    const [user, setUser] = useState(null);
+    const {user} = useContext(AuthContext);
+    /*const [user, setUser] = useState(null);
 
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged((user) => {
@@ -20,7 +22,7 @@ const Header = () =>{
             }
         });
         return () => unsubscribe();
-    }, []);
+    }, []);*/
 
     const logOut = () => {
         auth.signOut();
@@ -33,8 +35,10 @@ const Header = () =>{
                 <header>
                     <div>Pizza restaurant</div>
                     <nav>
+                        <h4>Witaj {user.displayName}</h4>
                         <NavLink to="/" exact>Strona główna</NavLink>
-                        <NavLink to="/myprofile">Mój profil</NavLink>
+                        <NavLink to="/myprofile">Złóż zamówienie</NavLink>
+                        <NavLink to="/history">Historia zamówień</NavLink>
                         <a href="/" onClick={logOut}>Wyloguj się</a>
                     </nav>
                 </header>

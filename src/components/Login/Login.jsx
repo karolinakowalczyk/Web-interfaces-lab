@@ -1,4 +1,4 @@
-import { useState} from 'react';
+import { useState, useEffect, useCallback} from 'react';
 import {Redirect} from 'react-router-dom';
 import { auth } from  '../../Firebase.js';
 import './Login.css';
@@ -12,12 +12,10 @@ const Login = () =>{
     const [wrongData, setWrongData] = useState(false);
 
     const signIn = () => {
-
         auth.signInWithEmailAndPassword(email, password).then(() => {
             console.log("zalogowano");
             setUserLogged(true);
             setWrongData(false);
-            
             
         }).catch((error) => {
             console.log(error);
@@ -25,8 +23,9 @@ const Login = () =>{
         });
     }
 
+
     if(userLogged){
-        return <Redirect to="/myprofile" exact />
+        return <Redirect to="/" exact />
       }
 
     
@@ -38,7 +37,7 @@ const Login = () =>{
                 <>
                     <input
                         className="login-input"
-                        type="text"
+                        type="email"
                         placeholder="email"
                         value={email}
                         onChange={e => setEmail(e.target.value)}
