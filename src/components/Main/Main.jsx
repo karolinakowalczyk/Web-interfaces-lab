@@ -10,13 +10,13 @@ const Main = () =>{
                 <MDBCarousel showIndicators showControls>
                     <MDBCarouselInner>
                         <MDBCarouselItem itemId={0}>
-                        <MDBCarouselElement src={Pizza1} alt='...' />
+                        <MDBCarouselElement className="pizza-img" src={Pizza1} alt='...' />
                         </MDBCarouselItem>
                         <MDBCarouselItem itemId={1}>
-                        <MDBCarouselElement src={Pizza2} alt='...' />
+                        <MDBCarouselElement className="pizza-img" src={Pizza2} alt='...' />
                         </MDBCarouselItem>
                         <MDBCarouselItem itemId={2}>
-                        <MDBCarouselElement src={Pizza3} alt='...' />
+                        <MDBCarouselElement className="pizza-img" src={Pizza3} alt='...' />
                         </MDBCarouselItem>
                     </MDBCarouselInner>
                 </MDBCarousel>

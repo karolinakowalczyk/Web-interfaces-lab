@@ -1,0 +1,31 @@
+.profile-page-container {
+    border: 3px solid none;
+    padding: 20px;
+    height: 40rem;
+}
+
+.profile-page-container-child {
+    width: 50%;
+    height: 40rem;
+    float: left;
+    padding: 20px;
+    border: 2px solid grey;
+    overflow: auto; 
+}  
+
+#pizza-icon{
+    display:inline-block;
+    margin-right:10px;
+}
+
+#ingredients {
+    display:inline-block;
+}
+
+li {
+    list-style-type: none;
+}
+
+.delete-order-btn {
+    margin-bottom: 0.5rem;
+}

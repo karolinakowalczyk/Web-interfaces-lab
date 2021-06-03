@@ -1,0 +1,12 @@
+.head-title{
+    display:inline-block;
+    margin-right:10px;
+}
+
+.pizza-icon {
+    display:inline-block;
+}
+
+.material-icons {
+    font-size: 36px; 
+}

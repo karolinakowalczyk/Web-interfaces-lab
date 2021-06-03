@@ -7,19 +7,21 @@ const Login = () =>{
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [forgotPasswordButton, setForgotPasswordButton] =useState(false);
     const [userLogged, setUserLogged] =useState(false);
     const [wrongData, setWrongData] = useState(false);
+    const [error, setError] = useState("");
 
     const signIn = () => {
         auth.signInWithEmailAndPassword(email, password).then(() => {
             console.log("zalogowano");
             setUserLogged(true);
             setWrongData(false);
+            setError("")
             
         }).catch((error) => {
             console.log(error);
             setWrongData(true);
+            setError("Zły email lub hasło!");
         });
     }
 
@@ -32,30 +34,27 @@ const Login = () =>{
     return (
         <>
         <div className="login-container">
-    
-            {!forgotPasswordButton ? 
-                <>
+        <h2 className="text-center mb-4">Logowanie </h2>
+            {wrongData && <div className="alert alert-danger" role="alert">{error}</div>}
+                <div>
+                    <label htmlFor="inputEmail1">Email</label>
                     <input
-                        className="login-input"
+                        className="login-input form-control"
+                        id="inputEmail1"
                         type="email"
-                        placeholder="email"
                         value={email}
                         onChange={e => setEmail(e.target.value)}
                     ></input>
+                    <label htmlFor="inputPassword1">Hasło</label>
                     <input
-                        className="login-input"
+                        className="login-input form-control"
+                        id="inputPassword1"
                         type="password"
-                        placeholder="hasło"
                         value={password}
                         onChange={e => setPassword(e.target.value)}
                     ></input>
-                    <button onClick={signIn}>Zaloguj się</button>
-                    <button onClick={() => setForgotPasswordButton(true)}> Zapomniałeś hasła? </button>
-                </> : <button onClick={() => setForgotPasswordButton(false)}> Zatwierdź nowe hasło </button>
-                } 
-                {wrongData && (
-                <h3 style={{ color: "red" }}>Wrong email or password</h3>    
-            )}     
+                    <button type="button" className="btn btn-success login-btn" onClick={signIn}>Zaloguj się</button>
+                </div>
         </div>
         </>    
                     

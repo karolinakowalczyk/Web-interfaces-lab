@@ -1,4 +1,4 @@
-.login-container {
+.registration-container {
     width: 30rem;
     text-align: center;
     margin: 0 auto;
@@ -6,6 +6,6 @@
     margin-bottom: 10px;
 }
 
-.login-btn {
+.register-btn {
     margin-top: 0.5rem;
 }

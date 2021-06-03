@@ -9,8 +9,10 @@ function App() {
     <>
     <AuthProvider>
       <Router basename={process.env.PUBLIC_URL}>
-        <div className="App">
-          <Header/>
+        <div className="page-container">
+          <div className="content-wrap">
+            <Header/>
+          </div>
           <Footer />
         </div>
       </Router>
