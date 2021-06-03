@@ -1,4 +1,7 @@
 # Web-interfaces-lab
+# Lab6 i 7
+To see lab6 i 7 switch to branch restaurant-app.
+
 # Lab5
 To see lab5 switch to branch master.
 
