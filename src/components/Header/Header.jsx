@@ -40,7 +40,14 @@ const Header = () =>{
         <>
         <Router>
             <header>
+            <div className="head-title">
                 <h1>Pizza Hut</h1>
+            </div>
+            <div className="pizza-icon">
+                <span class="material-icons">
+                    local_pizza
+                </span>
+            </div>
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
                     <NavLink to="/" exact className="navbar-brand">Strona główna</NavLink>
                     <NavLink to="/login" className="navbar-brand">Zaloguj się</NavLink>
