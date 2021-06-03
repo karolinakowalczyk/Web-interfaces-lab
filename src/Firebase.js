@@ -23,9 +23,6 @@ export const auth = firebase.auth();
 
 export const firestore = firebase.firestore();
 
-export const getMenu = () => {
-  return firestore.collection("menu").get();
-}
 
 export const addOrder = (user, pizzaData) => {
   firestore.collection("orders").add({

@@ -1,6 +1,7 @@
 import { useState} from 'react';
 import { Redirect } from 'react-router';
 import { auth } from '../../Firebase';
+//import { Form, Button, Card } from 'react-bootstrap'
 
 const Registation = () =>{
 
@@ -40,7 +41,6 @@ const Registation = () =>{
     
     return (
         <>
-
             <input
                 className="registation-input"
                 type="text"

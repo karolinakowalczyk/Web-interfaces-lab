@@ -1,10 +1,8 @@
-import {AuthContext} from '../AuthContext/AuthContext.jsx';
-import { useContext, useEffect, useState } from 'react';
-import { firestore, getMenu, addOrder, auth } from  '../../Firebase.js';
+import { useEffect, useState } from 'react';
+import { firestore, addOrder, auth } from  '../../Firebase.js';
 import { Alert } from 'reactstrap';
-//import createUUID from "../../utils/createUUID.jsx";
+
 const ProfilePage = () =>{
-    const {user} = useContext(AuthContext);
     const [menu, setMenu] = useState([]);
     const [order, setOrder] = useState([])
     const [showAlert, setShowAlert] = useState(false)
@@ -22,7 +20,6 @@ const ProfilePage = () =>{
     }
 
     const addToOrder = (pizza) => {
-        //console.log(pizza)
         setOrder(order.concat([pizza]))
     }
 
@@ -32,7 +29,6 @@ const ProfilePage = () =>{
     };
 
     const submitOrder = () =>{
-        //console.log(auth.currentUser)
         addOrder(auth.currentUser, {order})
         setOrder([])
         setShowAlert(true)
@@ -44,15 +40,6 @@ const ProfilePage = () =>{
             Twoje zamówienie zostało złożone!
         </Alert>)
     }
-
-    
-    /*const getRestaturantMenu = () => {
-        getMenu().then(pizza =>{
-            pizza.map(p => {setMenu([...menu, p.data()])
-            })
-
-        })
-    }*/
     
     return (
         <>
@@ -91,7 +78,7 @@ const ProfilePage = () =>{
                 )
                 })
             }
-            {order.length == 0 ? <></> : <button onClick={submitOrder}>Złóż zamówienie</button>}
+            {order.length === 0 ? <></> : <button onClick={submitOrder}>Złóż zamówienie</button>}
             
         </div>
         </>
